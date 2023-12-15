@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Leo Picado</string>
+    <string name="yellow_star">Star</string>
+    <string name="bio">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan arcu.\nNulla euismod ultricies erat, vitae mattis nunc pretium ut. Fusce volutpat urna at varius sagittis. Curabitur ullamcorper mi eu elementum blandit. Curabitur pulvinar dui luctus condimentum interdum. Mauris consequat varius dapibus. Vestibulum viverra at felis id imperdiet. Quisque scelerisque nec nulla quis auctor.
+        Vivamus at interdum massa, pellentesque semper erat.\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque blandit lacinia neque, sed vestibulum diam suscipit id. Pellentesque ullamcorper purus vitae tincidunt hendrerit. Proin elementum, magna quis ornare efficitur, felis lectus iaculis neque, ut consequat ante sem non neque. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur id malesuada diam, eu vehicula nisi. Duis sapien lacus, convallis id dui eget, convallis accumsan ex. Quisque vitae quam ut lacus mollis consequat. Pellentesque vitae vehicula massa. Sed sed sapien congue, pellentesque sem et, dictum tellus. Praesent malesuada lacus eu sapien posuere, vel dignissim turpis varius. Cras nec elit euismod nisi aliquam dictum quis sit amet orci.
+        Sed in erat volutpat, faucibus ligula et, efficitur sapien.\nSed dictum bibendum tellus vitae dignissim. Suspendisse egestas urna in pharetra sodales. Phasellus lacinia leo dui, quis ultricies urna blandit id. Suspendisse placerat et velit eget egestas. Nulla scelerisque ut diam id maximus. Cras rhoncus erat et semper ullamcorper. Pellentesque nec imperdiet nisl. Aliquam iaculis nec metus tempus lacinia. Proin tempor justo magna, vel dapibus dolor ornare nec. Donec dignissim a urna et aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla justo risus, tempor non maximus eu, tristique et urna. Sed faucibus nec nulla a fermentum. Praesent ultricies non neque non viverra. Integer id est non elit varius aliquet.
+        This is not being rendered.
+    </string>
+</resources>
