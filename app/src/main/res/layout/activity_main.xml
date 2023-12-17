@@ -1,88 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/textView"
-        style="@style/NameStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/small_padding"
-        android:text="@string/name"
-        android:textAlignment="center"
-        tools:text="Se la maja" />
+    <data>
+        <variable name="myName" type="com.leopicado.aboutme.MyName" />
+    </data>
 
-    <EditText
-        android:id="@+id/nickname_edit"
-        style="@style/NameStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/layout_marging"
-        android:hint="@string/nickname_edit_hint"
-        android:inputType="text|textCapWords"
-        android:textAlignment="center" />
-
-    <Button
-        android:id="@+id/done_button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/layout_marging"
-        android:fontFamily="@font/roboto_light"
-        android:text="@string/done_button" />
-
-    <EditText
-        android:id="@+id/nickname_text"
-        style="@style/NameStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/layout_marging"
-        android:textAlignment="center"
-        android:visibility="gone" />
-
-    <ImageView
-        android:id="@+id/star_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/layout_marging"
-        android:layout_marginEnd="@dimen/layout_marging"
-        android:contentDescription="@string/yellow_star"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
-    <ScrollView
-        android:id="@+id/bio_scroll"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/layout_marging"
-        android:layout_marginBottom="@dimen/layout_marging"
-        android:paddingStart="@dimen/layout_marging"
-        android:paddingEnd="@dimen/layout_marging">
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <!--        <LinearLayout-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:orientation="vertical">-->
-        <!--            <ImageView-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                app:srcCompat="@android:drawable/ic_menu_view" />-->
 
         <TextView
-            android:id="@+id/bio_text"
+            android:id="@+id/name_text"
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lineSpacingMultiplier="1.2"
             android:paddingTop="@dimen/small_padding"
-            android:paddingBottom="@dimen/small_padding"
-            android:text="@string/bio"
-            android:textAlignment="textStart"
-            tools:text="Long running text" />
-        <!--        </LinearLayout>-->
-    </ScrollView>
-</LinearLayout>
+            android:textAlignment="center"
+            android:text="@{myName.name}"
+            tools:text="Superior" />
+
+        <EditText
+            android:id="@+id/nickname_edit"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_marging"
+            android:hint="@string/nickname_edit_hint"
+            android:inputType="text|textCapWords"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/done_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_marging"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/done_button" />
+
+        <EditText
+            android:id="@+id/nickname_text"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_marging"
+            android:text="@{myName.nickname}"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/star_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_marging"
+            android:layout_marginEnd="@dimen/layout_marging"
+            android:contentDescription="@string/yellow_star"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ScrollView
+            android:id="@+id/bio_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/layout_marging"
+            android:layout_marginBottom="@dimen/layout_marging"
+            android:paddingStart="@dimen/layout_marging"
+            android:paddingEnd="@dimen/layout_marging">
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="vertical">-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                app:srcCompat="@android:drawable/ic_menu_view" />-->
+
+            <TextView
+                android:id="@+id/bio_text"
+                style="@style/NameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding"
+                android:text="@string/bio"
+                android:textAlignment="textStart"
+                tools:text="Long running text" />
+            <!--        </LinearLayout>-->
+        </ScrollView>
+    </LinearLayout>
+</layout>
