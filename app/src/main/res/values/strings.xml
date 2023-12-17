@@ -8,4 +8,6 @@
         Sed in erat volutpat, faucibus ligula et, efficitur sapien.\nSed dictum bibendum tellus vitae dignissim. Suspendisse egestas urna in pharetra sodales. Phasellus lacinia leo dui, quis ultricies urna blandit id. Suspendisse placerat et velit eget egestas. Nulla scelerisque ut diam id maximus. Cras rhoncus erat et semper ullamcorper. Pellentesque nec imperdiet nisl. Aliquam iaculis nec metus tempus lacinia. Proin tempor justo magna, vel dapibus dolor ornare nec. Donec dignissim a urna et aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla justo risus, tempor non maximus eu, tristique et urna. Sed faucibus nec nulla a fermentum. Praesent ultricies non neque non viverra. Integer id est non elit varius aliquet.
         This is not being rendered.
     </string>
+    <string name="nickname_edit_hint">What is your nickname?</string>
+    <string name="done_button">Done</string>
 </resources>

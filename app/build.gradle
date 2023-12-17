@@ -7,6 +7,10 @@ android {
     namespace 'com.leopicado.aboutme'
     compileSdk 33
 
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.leopicado.aboutme"
         minSdk 24
